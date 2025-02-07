@@ -16,4 +16,7 @@ contract MintBasicNFT is Script {
         BasicNFT(contractAddress).mintNFT(msg.sender);
         vm.stopBroadcast();
     }
+    // add this to be excluded from coverage report
+
+    function test() public {}
 }
