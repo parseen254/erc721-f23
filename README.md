@@ -1,6 +1,7 @@
 # ERC721 NFT Project 🎨
 
 [![CI](https://github.com/parseen254/erc721-f23/actions/workflows/test.yml/badge.svg)](https://github.com/parseen254/erc721-f23/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/parseen254/erc721-f23/graph/badge.svg?token=9U5TV5WA2X)](https://codecov.io/gh/parseen254/erc721-f23)
 
 This project demonstrates building NFTs using the ERC721 standard, implemented with Foundry. 🚀
 
