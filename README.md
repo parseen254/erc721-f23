@@ -1,66 +1,85 @@
-## Foundry
+# ERC721 NFT Project 🎨
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+[![CI](https://github.com/parseen254/erc721-f23/actions/workflows/test.yml/badge.svg)](https://github.com/parseen254/erc721-f23/actions/workflows/test.yml)
 
-Foundry consists of:
+This project demonstrates building NFTs using the ERC721 standard, implemented with Foundry. 🚀
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## What is this? 🤔
 
-## Documentation
+A simple yet powerful implementation of ERC721 tokens (NFTs) showcasing:
 
-https://book.getfoundry.sh/
+- Basic NFT minting functionality
+- Token metadata handling
+- Standard ERC721 interfaces
+- Comprehensive test coverage
 
-## Usage
+## Getting Started 🏃‍♂️
 
-### Build
+### Prerequisites
 
-```shell
-$ forge build
+- Foundry installed on your machine
+- Basic understanding of NFTs and ERC721
+
+### Installation 🛠️
+
+```bash
+git clone <this-repo>
+cd erc721-f23
+forge install
 ```
 
-### Test
+## Development Commands 💻
+
+### Build the project
 
 ```shell
-$ forge test
+forge build
 ```
 
-### Format
+### Run tests
 
 ```shell
-$ forge fmt
+forge test
 ```
 
-### Gas Snapshots
+### Format code
 
 ```shell
-$ forge snapshot
+forge fmt
 ```
 
-### Anvil
+### Check gas usage
 
 ```shell
-$ anvil
+forge snapshot
 ```
 
-### Deploy
+### Local development
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+anvil
 ```
 
-### Cast
+## Deployment 🚀
+
+To deploy your NFT contract:
 
 ```shell
-$ cast <subcommand>
+forge script script/DeployNFT.s.sol:DeployNFT --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
-### Help
+## Contributing 🤝
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Feel free to submit issues and PRs!
+
+## Resources 📚
+
+- [Foundry Book](https://book.getfoundry.sh/)
+- [OpenZeppelin ERC721 Docs](https://docs.openzeppelin.com/contracts/4.x/erc721)
+- [EIP-721 Standard](https://eips.ethereum.org/EIPS/eip-721)
+
+
+## MIT License ⚖️
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
