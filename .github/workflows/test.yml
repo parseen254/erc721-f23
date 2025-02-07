@@ -41,6 +41,7 @@ jobs:
         run: |
           forge test -vvv
         id: test
+
       - name: Run coverage
         run: |
           forge coverage --report lcov
