@@ -19,12 +19,15 @@ contract BasicNFT is ERC721 {
     function tokenURI(uint256 tokenId) public pure override returns (string memory) {
         string memory baseUrl = "https://api.dicebear.com/9.x/thumbs/svg?seed=";
         string memory imageUrl = string.concat(baseUrl, Strings.toString(tokenId));
-        
+
         // Create the JSON metadata
         bytes memory json = abi.encodePacked(
-            '{"name": "BasicNFT #', Strings.toString(tokenId), 
+            '{"name": "BasicNFT #',
+            Strings.toString(tokenId),
             '", "description": "An NFT from the BasicNFT collection", ',
-            '"image": "', imageUrl, '"}'
+            '"image": "',
+            imageUrl,
+            '"}'
         );
 
         // Base64 encode the JSON
